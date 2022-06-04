@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
 <!-- 解决页面favicon.ico文件不存在提示404问题-->
   <link rel="shortcut icon" href="#">
   <title>Zack's Basic Blog</title>
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
 </head>
 <body>
   <h1>All Posts</h1>
