@@ -8,13 +8,15 @@
 <!-- 解决页面favicon.ico文件不存在提示404问题-->
   <link rel="shortcut icon" href="#">
   <title>Zack's Basic Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
   <img src="{% static 'img/BJ.png' %}" alt="">
   {% heroicon_outline "adjustments" %}
   <h1>All Posts</h1>
-  <ul style="display:flex;flex-flow:column;gap:10px">
+  <ul class="bg-red-200 p-5 inline-block rounded">
     {% for post in posts %}
     <li>
       <div style="border: 1px solid black; width: 100%;">

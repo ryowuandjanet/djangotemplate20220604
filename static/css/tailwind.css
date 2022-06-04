@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face { 
   font-family: 'Roboto-Medium'; 
   src: url('../fonts/Roboto-Medium.ttf') format("truetype"), 
@@ -6,8 +10,4 @@
 
 body {
   font-family: 'Roboto-Medium','Noto Sans TC', sans-serif;
-}
-
-h1 {
-  color:red;
 }
