@@ -1,3 +1,4 @@
+import dj_database_url
 import django_on_heroku
 from decouple import config
 from .base import *
@@ -14,6 +15,8 @@ ALLOWED_HOSTS = [
   'ryowu-base-blog.herokuapp.com',
   'ryowu.blog'
 ]
+
+DATABASES = {'default': dj_database_url.config(default='sqlite://db.sqlite3',conn_max_age=600,ssl_require=False)}
 
 LOGGING = {
   'version': 1,

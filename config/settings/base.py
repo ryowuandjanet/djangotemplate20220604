@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-import dj_database_url
+# import dj_database_url
 from dotenv import load_dotenv, find_dotenv
 
 from pathlib import Path
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 load_dotenv(find_dotenv())
 
-DATABASES = {'default': dj_database_url.config(default='sqlite://db.sqlite3',conn_max_age=600,ssl_require=False)}
+# DATABASES = {'default': dj_database_url.config(default='sqlite://db.sqlite3',conn_max_age=600,ssl_require=False)}
 
 
 # DATABASES = {
