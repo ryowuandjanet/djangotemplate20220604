@@ -1,4 +1,5 @@
 {% load static %}
+{% load heroicons %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
 </head>
 <body>
   <img src="{% static 'img/BJ.png' %}" alt="">
+  {% heroicon_outline "adjustments" %}
   <h1>All Posts hello</h1>
   <ul style="display:flex;flex-flow:column;gap:10px">
     {% for post in posts %}
